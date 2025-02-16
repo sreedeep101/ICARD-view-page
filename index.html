@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICARD - Kannur University</title>
+    <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="IUCAA-logo-white 2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="IUCAA-logo-white 2.png" alt="iucaa_logo" height="80px"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+        <div class="university-logo"><img src="ku-logo-white 1.png" alt="ku_logo" height="80px" </div>
+    </header>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+        <h1>IUCAA Centre for Astronomy Research and Development (ICARD)</h1>
+        <h2>Department of Information Technology</h2>
+        <h3 style="color:red;">Kannur University</h3>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Rectangle 4.png" alt="Stars and Galaxies">
+                <div  class="text">Stars and Galaxies ⁠→</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="IUCAA2.png" alt="Milky Way">
+                <div  class="text" style="color:white;">Stars and Galaxies ⁠→</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="Rectangle 3.png" alt="Deep Space">
+                <div  class="text">Stars and Galaxies ⁠→</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Primary Functions Section -->
+    <section class="functions">
+       <center ><h2>IUCAA Centre for Astronomy Research and Development (ICARD)</h2>
+         <p>have been established at department of Information technology Kannur university.</p> 
+       </center>
+        <center><div id="fun_title"><h2 style="color:black;">The primary functions of ICARD are:</h2></div></center> 
+        <div class="cards">
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>
+                          <img src=" image01.png" alt="logo" height="30px" width="30px"style="margin-right: 20px">  
+                        </td>
+                        <td>
+<h3>Innovative Education</h3>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            
+                        </td>
+                        <td><p>Enhancing astronomy education through modern courses and distance learning programs.</p></td></tr>
+                </table>
+                
+            </div>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td><img src="image02.png" alt="logo"height="30px" width="30px"style="margin-right: 20px">                                  </td>
+                        <td><h3>Workshops & Meetings</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td><p>Regular workshops and meetings within universities and nearby regions.</p>     
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>             <img src=" image03.png" alt="logo" height="30px" width="30px"style="margin-right: 20px">
+                        </td>
+                        <td>          <h3>Public Outreach</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>           <p>Active public outreach for astronomy education and awareness.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>         <img src=" image04.png" alt="logo" height="30px" width="30px"style="margin-right: 20px">
+                        </td>
+                        <td>        <h3>Visiting Centre</h3> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>            <p>Serving as a visiting center for nearby astronomers.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <img src="Rectangle 3.png" alt="Event 1">
+                <h3>PROBING STARS AND GALAXIES USING INNOVATIVE DATA SCIENCE TOOLS</h3>
+                <button><a href="Read_E.html">Read →</a></button>
+            </div>
+            <div class="event-card">
+                <img src="Rectangle 4.png" alt="Event 2">
+                <h3 >TUTORIAL ON IGWN-DHTC-OSG</h3>
+                <button><a href="Read_E.html">Read →</a></button>
+            </div>
+            <div class="event-card">
+                <img src="Union.png" alt="Event 3">
+                <h3>CONTEMPORARY ISSUES IN ASTRONOMY AND ASTROPHYSICS</h3>
+                <button><a href="Read_E.html">Read →</a></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

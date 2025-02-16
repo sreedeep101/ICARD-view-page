@@ -1,0 +1,119 @@
+body {
+    background-color: #000000;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+}
+ .events {
+    padding: 40px 20px;
+    background-color: #000000;
+     color:white;
+}
+.events h2{
+    text-align:center;
+    
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+ .event-card {
+    background: #000000;
+    padding: 5px;
+     height: 150px;
+     position:relative;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 5px 17px 1px rgb(168, 168, 168,0.5);
+    transition: transform 0.3s;
+}
+.event-card:hover {
+    transform: translateY(-10px);
+}
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgb(255, 255, 255,0.5);
+    position:relative;
+}
+
+.event-card h3 {
+    position: absolute;
+    bottom:0;
+    font-size:10px;
+}
+
+.event-card button:hover {
+    background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+    }
+
+.nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+

@@ -1,0 +1,252 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #0b1d2d;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, black 0%, #081e26 90%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    margin-left: 90px;
+}
+.university-logo{
+    margin-right: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size:18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background-image: url(Rectangle\ 6.png);
+    background-size: cover;
+}
+
+.hero h1,h2, .hero h3 {
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #ff4c4c;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+    width:100%;
+    height: 620px;
+    
+}
+
+.mySlides img {
+    width: 96%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.text{
+    color: rgb(255, 253, 253);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  padding-left: 5%;
+  bottom: 2px;          
+  width: 100%;
+  text-align: start;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #5a5f66;
+}
+
+/* Functions Section */
+.functions{
+    padding: 40px 20px;
+    background-color: #061924;
+
+}
+ .events {
+    padding: 40px 50px;
+    background-color: #061924;
+}
+.events h2{
+    text-align:center;
+    
+}
+
+.cards,.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+#fun_title{
+    background-color:white;
+    border-radius:50px;
+    width:50%;
+    padding:0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+}
+.card img{
+    border-radius:10px;
+    margin-top: 15px;
+}
+.card{
+    width: 450px;
+    background: #000000;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px white, -0.5px 0.5px #061924;
+    transition: transform 0.3s;
+}
+ .event-card {
+    background: #000000;
+    padding: 5px;
+     height: 275px;
+     position:relative;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 69px 98px rgb(38, 100, 133,0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover, .event-card:hover {
+    transform: translateY(-10px);
+}
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 13px rgb(255, 255, 255);
+}
+.event-card h3{
+    font-size:14px;
+}
+.event-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #000000;
+    border: solid white 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.event-card a:hover{
+    color: black;
+}
+.event-card button:hover {
+    background: #ffffff;
+    border: solid black 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
